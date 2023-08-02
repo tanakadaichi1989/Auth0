@@ -19,6 +19,7 @@
 		A1C631D22A7AEDE300AA9CAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631D12A7AEDE300AA9CAF /* HomeView.swift */; };
 		A1C631D42A7AF04B00AA9CAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631D32A7AF04B00AA9CAF /* LoginView.swift */; };
 		A1C631D62A7AF49C00AA9CAF /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1C631D52A7AF49C00AA9CAF /* Auth0.plist */; };
+		A1C631D82A7AFB2800AA9CAF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631D72A7AFB2800AA9CAF /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A1C631D12A7AEDE300AA9CAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A1C631D32A7AF04B00AA9CAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A1C631D52A7AF49C00AA9CAF /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		A1C631D72A7AFB2800AA9CAF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A1C631D12A7AEDE300AA9CAF /* HomeView.swift */,
 				A1C631D32A7AF04B00AA9CAF /* LoginView.swift */,
 				A1C631CC2A79539B00AA9CAF /* Auth0Service.swift */,
+				A1C631D72A7AFB2800AA9CAF /* Profile.swift */,
 				A1C631D52A7AF49C00AA9CAF /* Auth0.plist */,
 				A1C631A12A79506600AA9CAF /* Assets.xcassets */,
 				A1C631A32A79506600AA9CAF /* Preview Content */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C631A02A79506500AA9CAF /* ContentView.swift in Sources */,
+				A1C631D82A7AFB2800AA9CAF /* Profile.swift in Sources */,
 				A1C631D22A7AEDE300AA9CAF /* HomeView.swift in Sources */,
 				A1C6319E2A79506500AA9CAF /* Sample_App_with_Auth0App.swift in Sources */,
 				A1C631D42A7AF04B00AA9CAF /* LoginView.swift in Sources */,

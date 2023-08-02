@@ -6,20 +6,28 @@
 //
 
 import SwiftUI
+import Auth0
 
 struct HomeView: View {
     @EnvironmentObject var service: Auth0Service
     var body: some View {
         VStack {
-            title
+            userImage
+            Text(service.userProfile.name)
+                .padding()
             logoutButton
+                .padding()
         }
     }
     
-    private var title: some View {
-        Text("Home View")
-            .font(.largeTitle)
-            .fontWeight(.black)
+    private var userImage: some View {
+        AsyncImage(url: URL(string: service.userProfile.picture)){ response in
+            response.image?
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100,height: 100)
+                .cornerRadius(50)
+        }
     }
     
     private var logoutButton: some View {
@@ -28,7 +36,11 @@ struct HomeView: View {
         } label: {
             Text("Log out")
         }
-        .buttonStyle(.borderedProminent)
+        .fontWeight(.black)
+        .frame(width: 160, height: 48)
+        .foregroundColor(.white)
+        .background(Color.primary)
+        .cornerRadius(24)
     }
 }
 

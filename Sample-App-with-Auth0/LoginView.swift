@@ -28,7 +28,11 @@ struct LoginView: View {
         } label: {
             Text("Log in")
         }
-        .buttonStyle(.borderedProminent)
+        .fontWeight(.black)
+        .frame(width: 160, height: 48)
+        .foregroundColor(.white)
+        .background(Color.primary)
+        .cornerRadius(24)
     }
 }
 
