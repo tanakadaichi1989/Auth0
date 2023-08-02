@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var service: Auth0Service
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if service.isAuthenticated {
+            HomeView()
+        } else {
+            LoginView()
         }
-        .padding()
+    }
+}
+
+
+extension ContentView {
+    private func login(){
+        service.login {_ in true}
+    }
+    
+    private func logout(){
+        service.logout {_ in false }
     }
 }
 

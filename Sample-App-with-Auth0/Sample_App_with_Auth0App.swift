@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Sample_App_with_Auth0App: App {
+    @StateObject var service: Auth0Service = Auth0Service()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(service)
         }
     }
 }

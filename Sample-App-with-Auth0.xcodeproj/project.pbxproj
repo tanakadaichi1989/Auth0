@@ -14,6 +14,10 @@
 		A1C631AF2A79506600AA9CAF /* Sample_App_with_Auth0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631AE2A79506600AA9CAF /* Sample_App_with_Auth0Tests.swift */; };
 		A1C631B92A79506600AA9CAF /* Sample_App_with_Auth0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631B82A79506600AA9CAF /* Sample_App_with_Auth0UITests.swift */; };
 		A1C631BB2A79506600AA9CAF /* Sample_App_with_Auth0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631BA2A79506600AA9CAF /* Sample_App_with_Auth0UITestsLaunchTests.swift */; };
+		A1C631CD2A79539B00AA9CAF /* Auth0Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631CC2A79539B00AA9CAF /* Auth0Service.swift */; };
+		A1C631D02A7953AC00AA9CAF /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = A1C631CF2A7953AC00AA9CAF /* Auth0 */; };
+		A1C631D22A7AEDE300AA9CAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631D12A7AEDE300AA9CAF /* HomeView.swift */; };
+		A1C631D42A7AF04B00AA9CAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C631D32A7AF04B00AA9CAF /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		A1C631B42A79506600AA9CAF /* Sample-App-with-Auth0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-App-with-Auth0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C631B82A79506600AA9CAF /* Sample_App_with_Auth0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_App_with_Auth0UITests.swift; sourceTree = "<group>"; };
 		A1C631BA2A79506600AA9CAF /* Sample_App_with_Auth0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_App_with_Auth0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1C631CC2A79539B00AA9CAF /* Auth0Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0Service.swift; sourceTree = "<group>"; };
+		A1C631D12A7AEDE300AA9CAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1C631D32A7AF04B00AA9CAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C631D02A7953AC00AA9CAF /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,9 @@
 			children = (
 				A1C6319D2A79506500AA9CAF /* Sample_App_with_Auth0App.swift */,
 				A1C6319F2A79506500AA9CAF /* ContentView.swift */,
+				A1C631D12A7AEDE300AA9CAF /* HomeView.swift */,
+				A1C631D32A7AF04B00AA9CAF /* LoginView.swift */,
+				A1C631CC2A79539B00AA9CAF /* Auth0Service.swift */,
 				A1C631A12A79506600AA9CAF /* Assets.xcassets */,
 				A1C631A32A79506600AA9CAF /* Preview Content */,
 			);
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = "Sample-App-with-Auth0";
+			packageProductDependencies = (
+				A1C631CF2A7953AC00AA9CAF /* Auth0 */,
+			);
 			productName = "Sample-App-with-Auth0";
 			productReference = A1C6319A2A79506500AA9CAF /* Sample-App-with-Auth0.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = A1C631912A79506500AA9CAF;
+			packageReferences = (
+				A1C631CE2A7953AC00AA9CAF /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			productRefGroup = A1C6319B2A79506500AA9CAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C631A02A79506500AA9CAF /* ContentView.swift in Sources */,
+				A1C631D22A7AEDE300AA9CAF /* HomeView.swift in Sources */,
 				A1C6319E2A79506500AA9CAF /* Sample_App_with_Auth0App.swift in Sources */,
+				A1C631D42A7AF04B00AA9CAF /* LoginView.swift in Sources */,
+				A1C631CD2A79539B00AA9CAF /* Auth0Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1C631CE2A7953AC00AA9CAF /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1C631CF2A7953AC00AA9CAF /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1C631CE2A7953AC00AA9CAF /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1C631922A79506500AA9CAF /* Project object */;
 }
