@@ -35,6 +35,6 @@ struct HomeView: View {
 
 extension HomeView {
     private func logout() {
-        service.logout { _ in false }
+        service.logout()
     }
 }

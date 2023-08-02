@@ -22,11 +22,11 @@ struct ContentView: View {
 
 extension ContentView {
     private func login(){
-        service.login {_ in true}
+        service.login()
     }
     
     private func logout(){
-        service.logout {_ in false }
+        service.logout()
     }
 }
 

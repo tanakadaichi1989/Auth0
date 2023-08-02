@@ -35,6 +35,6 @@ struct LoginView: View {
 
 extension LoginView {
     private func login() {
-        service.login { _ in false }
+        service.login()
     }
 }
